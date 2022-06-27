@@ -21,7 +21,7 @@ const TextContainer = ({ users }) => (
               😀
             </span>
           </p>
-          <p className="bottom">Share the link and the RoomCode with them</p>
+          <p className="bottom">Share the link : https://isnt-veerprakash28-awesome.netlify.app and the RoomCode with them</p>
         </div>
 
         <h2 className="peopleOnline">People Online:</h2>
