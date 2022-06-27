@@ -1,3 +1,3 @@
-React Based chat-app
+# React Based chat-app
 
 Using React, Node.JS, Socket.io
