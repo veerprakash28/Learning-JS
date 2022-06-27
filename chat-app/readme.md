@@ -2,4 +2,4 @@
 
 Using React, Node.JS, Socket.io
 
-Live Server Link: https://isnt-veerprakash28-awesome.netlify.app
+Live Server Link: https://learning-js-chat-app.netlify.app

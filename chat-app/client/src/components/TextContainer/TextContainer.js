@@ -22,7 +22,7 @@ const TextContainer = ({ users }) => (
             </span>
           </p>
           <p>Share the link and the RoomCode with them</p>
-          <code>https://isnt-veerprakash28-awesome.netlify.app</code>
+          <code>https://bit.ly/3yqGqod</code>
           <p className="bottom"></p>
         </div>
 
