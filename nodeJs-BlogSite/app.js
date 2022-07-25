@@ -9,16 +9,14 @@ dotenv.config({ path: "./config/config.env" });
 
 // express app
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Connect to MongoDB
 const dbURI = process.env.dbURI;
+console.log(dbURI);
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) =>
-    app.listen(3000, () => {
-      console.log(`Server is Running on port ${process.env.PORT}`);
-    })
-  )
+  .then((result) => app.listen(port))
   .catch((err) => console.log(err));
 
 // Register view engine
@@ -40,7 +38,7 @@ app.get("/about", (req, res) => {
 });
 
 // Blog Routes
-app.use('/blogs', blogRoutes);
+app.use("/blogs", blogRoutes);
 
 // 404 Page
 app.use((req, res) => {
