@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000;
 
 // Connect to MongoDB
 const dbURI = process.env.dbURI;
-console.log(dbURI);
+console.log(typeof dbURI);
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(port))
