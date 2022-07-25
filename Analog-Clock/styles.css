@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: black;
 }
@@ -27,3 +28,34 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+=======
+body {
+  background-color: black;
+}
+
+#time-div {
+  background-color: #000;
+  height: 160px;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* border: 2px solid #fff; */
+  padding: 5px;
+  color: rgb(0, 157, 255);
+  text-align: center;
+  font-size: 90px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.center {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+>>>>>>> main
