@@ -22,7 +22,12 @@ const TextContainer = ({ users }) => (
             </span>
           </p>
           <p>Share the link and the RoomCode with them</p>
-          <code>https://bit.ly/3yqGqod</code>
+          <code>
+            {window.location.href.slice(
+              0,
+              window.location.href.indexOf("/chat")
+            )}
+          </code>
           <p className="bottom"></p>
         </div>
 
