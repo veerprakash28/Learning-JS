@@ -1,3 +1,17 @@
+// Save the task list to local storage
+function saveToLocalStorage() {
+  localStorage.setItem("taskList", parentList.innerHTML);
+}
+
+// Retrieve the task list from local storage
+function retrieveFromLocalStorage() {
+  if (localStorage.getItem("taskList")) {
+    parentList.innerHTML = localStorage.getItem("taskList");
+  }
+}
+// Call the retrieve function when the page loads
+document.addEventListener("DOMContentLoaded", retrieveFromLocalStorage);
+
 let addBtn = document.getElementById("add_btn");
 addBtn.addEventListener("click", addTask);
 let parentList = document.getElementById("parentList");
@@ -16,7 +30,10 @@ function addTask(e) {
   let newLi = document.createElement("li");
   // newLi.classList.add("list-group-item");
   newLi.className = "list-group-item d-flex justify-content-between";
-  newLi.innerHTML = `<h4 class="flex-grow-1">${currentTask}</h4>
+  newLi.innerHTML = `<button class="btn btn-success mx-1 btn-sm" onclick="checkTask(this)">
+      <span class="material-symbols-outlined">Check</span>
+      </button>
+      <h4 class="flex-grow-1">${currentTask}</h4>
       <button class="btn btn-warning mx-1" onclick="editTask(this)">
         <span class="material-symbols-outlined"> edit </span>
       </button>
@@ -24,6 +41,9 @@ function addTask(e) {
         <span class="material-symbols-outlined"> delete </span>
       </button>`;
   parentList.appendChild(newLi);
+
+  currentInput.value = "";
+  saveToLocalStorage();
 }
 
 function removeTask(currElement) {
@@ -37,6 +57,8 @@ function removeTask(currElement) {
     newEmptyMsg.classList.add("emptyMsg");
     parentList.appendChild(newEmptyMsg);
     //   console.log(parentList.children[0].className);
+
+    saveToLocalStorage();
   }
 }
 
@@ -50,6 +72,9 @@ function editTask(currElement) {
     let currHeading = document.createElement("h4");
     currHeading.className = "flex-grow-1";
     currHeading.textContent = currTask;
+    if (currElement.parentElement.classList.contains("changeColour")) {
+      currHeading.classList.add("strikethrough");
+    }
     currElement.parentElement.replaceChild(
       currHeading,
       currElement.previousElementSibling
@@ -68,4 +93,16 @@ function editTask(currElement) {
       currElement.previousElementSibling
     );
   }
+
+  saveToLocalStorage();
+}
+
+function checkTask(currElement) {
+  console.log(currElement.parentElement);
+  var currentLi = currElement.parentElement;
+  currentLi.classList.toggle("changeColour");
+  var h4 = currElement.parentNode.querySelector("h4");
+  h4.classList.toggle("strikethrough");
+
+  saveToLocalStorage();
 }
