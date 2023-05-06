@@ -103,6 +103,5 @@ function checkTask(currElement) {
   currentLi.classList.toggle("changeColour");
   var h4 = currElement.parentNode.querySelector("h4");
   h4.classList.toggle("strikethrough");
-
   saveToLocalStorage();
 }
