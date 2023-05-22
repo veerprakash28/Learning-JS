@@ -7,3 +7,39 @@ body {
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
+
+.outer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.inner-container {
+  display: inline-block;
+  margin: 10px;
+  flex: 1 1 18rem;
+  max-width: 18rem;
+}
+
+.card-img-top {
+  width: 100px;
+  height: 160px;
+  border-bottom: 2px solid #db005b;
+}
+
+@media screen and (min-width: 576px) {
+  .inner-container {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .inner-container {
+    width: calc(33.33% - 1rem);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .inner-container {
+    width: calc(25% - 1rem);
+  }
+}
