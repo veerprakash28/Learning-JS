@@ -105,3 +105,8 @@ function checkTask(currElement) {
   h4.classList.toggle("strikethrough");
   saveToLocalStorage();
 }
+
+const dragArea = document.querySelector("#parentList");
+new Sortable(dragArea, {
+  animation: 250,
+});
