@@ -114,6 +114,11 @@ function checkTask(currElement) {
 }
 
 const dragArea = document.querySelector("#parentList");
-new Sortable(dragArea, {
+const sortable = new Sortable(dragArea, {
   animation: 250,
+});
+
+// Save the new order to local storage after dragging
+sortable.option("onEnd", function (event) {
+  saveToLocalStorage();
 });
