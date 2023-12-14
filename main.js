@@ -15,11 +15,14 @@ const projectCards = projects.map((project) => {
 
   return `<div class="card inner-container" style="width: 18rem">
       <img class="card-img-top" src="${project.image}" alt="${project.title} Image" />
-      <div class="card-body">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title">${project.title}</h5>
         <p class="card-text">${project.description}</p>
+        <div class="mt-auto">
         ${demoButton}
         ${codeButton}
+        </div>
+        
       </div>
     </div>`;
 });

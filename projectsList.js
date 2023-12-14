@@ -71,4 +71,13 @@ export const projects = [
     demoLink: "https://veerprakash28.github.io/talk-gpt/",
     codeLink: "https://github.com/veerprakash28/talk-gpt",
   },
+  {
+    id: 9,
+    title: "FitBit",
+    image: "./assets/images/fitbit-webapp.png",
+    description:
+      "Built with React and Tailwind, this app empowers fitness trainers by simplifying client appointment management for enhanced efficiency in scheduling.",
+    demoLink: "https://react-fitbit.netlify.app/",
+    codeLink: "https://github.com/veerprakash28/fitbit-app",
+  },
 ];
