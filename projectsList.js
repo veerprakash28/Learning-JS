@@ -80,4 +80,13 @@ export const projects = [
     demoLink: "https://react-fitbit.netlify.app/",
     codeLink: "https://github.com/veerprakash28/fitbit-app",
   },
+  {
+    id: 10,
+    title: "Summer Wanders",
+    image: "./assets/images/summer-wanders.png",
+    description:
+      "Summer Wanders, developed using React and powered by Tailwind CSS, harnesses real-time weather data and personalized recommendations to simplify vacation planning for travelers worldwide.",
+    demoLink: "https://summerwanders.netlify.app/",
+    codeLink: "https://github.com/veerprakash28/summer-wanders",
+  },
 ];
