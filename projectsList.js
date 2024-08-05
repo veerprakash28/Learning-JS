@@ -89,4 +89,13 @@ export const projects = [
     demoLink: "https://summerwanders.netlify.app/",
     codeLink: "https://github.com/veerprakash28/summer-wanders",
   },
+  {
+    id: 11,
+    title: "FletNix - What to watch",
+    image: "./assets/images/fletnix-details-page.png",
+    description:
+      "FletNix, a full-stack webapp using AngularJS 17, Node.js, MongoDB, and Tailwind CSS for exploring TV shows and movies with search, filter, and authentication features",
+    demoLink: "https://ng-fletnix.netlify.app/",
+    codeLink: "https://github.com/veerprakash28/ng-fletnix-frontend",
+  },
 ];
