@@ -62,15 +62,15 @@ export const projects = [
     demoLink: "https://react-movie-insights-app.netlify.app/",
     codeLink: "https://github.com/veerprakash28/react-movie-insights-app",
   },
-  {
-    id: 8,
-    title: "Talk GPT",
-    image: "./assets/images/talk-gpt.png",
-    description:
-      "Utilizing HTML, CSS, JS, Node.js, and OpenAI API, it enables seamless speech and text communication with ChatGPT.",
-    demoLink: "https://veerprakash28.github.io/talk-gpt/",
-    codeLink: "https://github.com/veerprakash28/talk-gpt",
-  },
+  // {
+  //   id: 8,
+  //   title: "Talk GPT",
+  //   image: "./assets/images/talk-gpt.png",
+  //   description:
+  //     "Utilizing HTML, CSS, JS, Node.js, and OpenAI API, it enables seamless speech and text communication with ChatGPT.",
+  //   demoLink: "https://veerprakash28.github.io/talk-gpt/",
+  //   codeLink: "https://github.com/veerprakash28/talk-gpt",
+  // },
   {
     id: 9,
     title: "FitBit",
@@ -97,5 +97,14 @@ export const projects = [
       "FletNix, a full-stack webapp using AngularJS 17, Node.js, MongoDB, and Tailwind CSS for exploring TV shows and movies with search, filter, and authentication features",
     demoLink: "https://ng-fletnix.netlify.app/",
     codeLink: "https://github.com/veerprakash28/ng-fletnix-frontend",
+  },
+  {
+    id: 12,
+    title: "YouTube Shorts Auto-Scroller",
+    image: "./assets/images/youtube-shorts-autoscroller.png",
+    description:
+      "Seamlessly auto-scroll through YouTube Shorts with this Chrome extension—created using JavaScript, HTML, and a Chrome manifest—for hands-free, continuous playback.",
+    // demoLink: "https://ng-fletnix.netlify.app/",
+    codeLink: "https://github.com/veerprakash28/youtube-shorts-autoscroller",
   },
 ];
