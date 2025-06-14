@@ -62,15 +62,15 @@ export const projects = [
     demoLink: "https://react-movie-insights-app.netlify.app/",
     codeLink: "https://github.com/veerprakash28/react-movie-insights-app",
   },
-  // {
-  //   id: 8,
-  //   title: "Talk GPT",
-  //   image: "./assets/images/talk-gpt.png",
-  //   description:
-  //     "Utilizing HTML, CSS, JS, Node.js, and OpenAI API, it enables seamless speech and text communication with ChatGPT.",
-  //   demoLink: "https://veerprakash28.github.io/talk-gpt/",
-  //   codeLink: "https://github.com/veerprakash28/talk-gpt",
-  // },
+  {
+    id: 8,
+    title: "Talk GPT",
+    image: "./assets/images/talk-gpt.png",
+    description:
+      "Utilizing HTML, CSS, JS, Node.js, and OpenAI API, it enables seamless speech and text communication with ChatGPT.",
+    demoLink: "https://veerprakash28.github.io/talk-gpt/",
+    codeLink: "https://github.com/veerprakash28/talk-gpt",
+  },
   {
     id: 9,
     title: "FitBit",
